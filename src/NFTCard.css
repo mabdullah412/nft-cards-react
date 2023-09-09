@@ -1,0 +1,96 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 25px;
+  width: 300px;
+  border-radius: 15px;
+  color: lightslategray;
+  background: rgb(20, 38, 63);
+  background: linear-gradient(
+    0deg,
+    rgba(20, 38, 63, 1) 0%,
+    rgba(21, 39, 63, 1) 100%
+  );
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: translate(0, -5px);
+  box-shadow: 0 2px 30px rgba(42, 22, 153, 0.4);
+}
+
+.card__image {
+  height: 250px;
+  width: 100%;
+  overflow: hidden;
+  background-size: cover;
+  border-radius: 15px;
+}
+
+.card__image img {
+  width: 100%;
+}
+
+.card__title {
+  color: lightgray;
+  margin: 0;
+}
+
+.card__description {
+  margin: 0;
+}
+
+.card__price_time_holder {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card__price_time_holder img {
+  margin-right: 10px;
+}
+
+.card__price {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  color: #01f9f7;
+}
+
+.card__timeleft {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+
+.card__splitter {
+  border-top: 1px solid darkslategray;
+  margin: 15px 0;
+}
+
+.card__avatar {
+  display: flex;
+  align-items: center;
+}
+
+.card__avatar p {
+  margin: 0;
+}
+
+.card__avatar_img {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  margin-right: 10px;
+  overflow: hidden;
+}
+
+.card__avatar_img img {
+  width: 100%;
+}
+
+.card__avatar_name {
+  color: lightgray;
+}
